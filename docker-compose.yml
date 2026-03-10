@@ -1,0 +1,58 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: ai-recruiting-postgres
+    environment:
+      - POSTGRES_DB=ai_recruiting
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  ollama:
+    image: ollama/ollama:latest
+    container_name: ai-recruiting-ollama
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama:/root/.ollama
+    healthcheck:
+      test: ["CMD", "ollama", "list"]
+      interval: 10s
+      timeout: 10s
+      retries: 5
+
+  server:
+    build:
+      context: .
+      dockerfile: apps/server/Dockerfile
+    container_name: ai-recruiting-server
+    environment:
+      - PORT=8787
+      - OLLAMA_BASE_URL=http://ollama:11434
+      - OLLAMA_MODEL=llama3.2:1b
+      - OLLAMA_EMBED_MODEL=nomic-embed-text
+      - POSTGRES_URL=postgresql://postgres:postgres@postgres:5432/ai_recruiting
+    ports:
+      - "8787:8787"
+    depends_on:
+      - postgres
+      - ollama
+
+  web:
+    build:
+      context: .
+      dockerfile: apps/web/Dockerfile
+    container_name: ai-recruiting-web
+    environment:
+      - VITE_API_BASE_URL=http://localhost:8787
+    ports:
+      - "5173:5173"
+    depends_on:
+      - server
+
+volumes:
+  ollama:
+  postgres_data:

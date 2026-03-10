@@ -1,0 +1,122 @@
+[
+  {
+    "id": "cand_001",
+    "name": "Ava Patel",
+    "title": "Senior Full Stack Engineer",
+    "location": "New York",
+    "skills": ["TypeScript", "React", "Node.js", "PostgreSQL", "GraphQL", "AWS"],
+    "yearsExperience": 7,
+    "summary": "Built customer-facing SaaS features and internal developer platforms in startup and growth-stage teams.",
+    "achievements": ["Led migration to TypeScript across 40 services", "Reduced API latency by 34%", "Mentored 6 engineers"],
+    "contactEmail": "ava.patel@example.com",
+    "tags": ["startup", "onsite"]
+  },
+  {
+    "id": "cand_002",
+    "name": "Leo Martinez",
+    "title": "Founding Engineer",
+    "location": "Remote",
+    "skills": ["TypeScript", "React", "Node.js", "LLM", "LangChain", "Docker"],
+    "yearsExperience": 5,
+    "summary": "Generalist engineer who shipped AI copilots and scalable APIs for B2B workflow products.",
+    "achievements": ["Built AI search MVP from scratch", "Launched product used by 3k weekly users"],
+    "contactEmail": "leo.martinez@example.com",
+    "tags": ["startup", "remote", "ai"]
+  },
+  {
+    "id": "cand_003",
+    "name": "Mina Chen",
+    "title": "Product Engineer",
+    "location": "San Francisco",
+    "skills": ["React", "TypeScript", "Figma", "Node.js", "Product Analytics"],
+    "yearsExperience": 4,
+    "summary": "Product-minded engineer bridging design and development with strong experimentation habits.",
+    "achievements": ["Improved onboarding conversion by 20%", "Built design system for rapid iterations"],
+    "contactEmail": "mina.chen@example.com",
+    "tags": ["hybrid", "startup"]
+  },
+  {
+    "id": "cand_004",
+    "name": "Noah Kim",
+    "title": "Backend Engineer",
+    "location": "New York",
+    "skills": ["Go", "Kubernetes", "PostgreSQL", "AWS", "Redis"],
+    "yearsExperience": 6,
+    "summary": "Infrastructure-focused backend engineer with deep distributed systems knowledge.",
+    "achievements": ["Designed multi-region service architecture", "Cut infra costs by 27%"],
+    "contactEmail": "noah.kim@example.com",
+    "tags": ["onsite"]
+  },
+  {
+    "id": "cand_005",
+    "name": "Priya Singh",
+    "title": "AI Application Engineer",
+    "location": "Remote",
+    "skills": ["Python", "TypeScript", "LLM", "RAG", "FastAPI", "React"],
+    "yearsExperience": 5,
+    "summary": "Specialized in LLM application development, retrieval systems, and prompt orchestration.",
+    "achievements": ["Shipped production RAG assistant", "Improved answer quality by 31% through eval loops"],
+    "contactEmail": "priya.singh@example.com",
+    "tags": ["remote", "ai", "startup"]
+  },
+  {
+    "id": "cand_006",
+    "name": "Ethan Brooks",
+    "title": "Frontend Engineer",
+    "location": "Austin",
+    "skills": ["React", "TypeScript", "Next.js", "Tailwind", "Storybook"],
+    "yearsExperience": 3,
+    "summary": "Frontend specialist with strong UX implementation and component architecture skills.",
+    "achievements": ["Owned UI platform rewrite", "Increased Lighthouse score to 95+"],
+    "contactEmail": "ethan.brooks@example.com",
+    "tags": ["remote-friendly"]
+  },
+  {
+    "id": "cand_007",
+    "name": "Sara Hassan",
+    "title": "Senior Product Engineer",
+    "location": "New York",
+    "skills": ["TypeScript", "React", "Node.js", "LLM", "PostgreSQL", "Growth"],
+    "yearsExperience": 8,
+    "summary": "Outcome-driven engineer with deep startup experience across product, growth, and AI features.",
+    "achievements": ["Scaled app from 0 to 120k MAU", "Built internal AI recruiter prototype"],
+    "contactEmail": "sara.hassan@example.com",
+    "tags": ["startup", "onsite", "ai"]
+  },
+  {
+    "id": "cand_008",
+    "name": "Daniel Reed",
+    "title": "Machine Learning Engineer",
+    "location": "Boston",
+    "skills": ["Python", "PyTorch", "MLOps", "LLM", "RAG", "AWS"],
+    "yearsExperience": 6,
+    "summary": "ML engineer with production model deployment and evaluation framework expertise.",
+    "achievements": ["Created automated model quality dashboard", "Reduced hallucinations in assistant outputs"],
+    "contactEmail": "daniel.reed@example.com",
+    "tags": ["remote"]
+  },
+  {
+    "id": "cand_009",
+    "name": "Olivia Green",
+    "title": "Full Stack Engineer",
+    "location": "Remote",
+    "skills": ["TypeScript", "React", "Node.js", "MongoDB", "Docker", "CI/CD"],
+    "yearsExperience": 4,
+    "summary": "Full stack engineer experienced in shipping SaaS features and deployment pipelines.",
+    "achievements": ["Built recruiting analytics dashboard", "Automated release pipeline end-to-end"],
+    "contactEmail": "olivia.green@example.com",
+    "tags": ["remote", "startup"]
+  },
+  {
+    "id": "cand_010",
+    "name": "Jacob Lee",
+    "title": "Engineering Manager",
+    "location": "Seattle",
+    "skills": ["People Management", "Architecture", "Node.js", "Java", "Hiring"],
+    "yearsExperience": 10,
+    "summary": "Engineering leader focused on team scaling and architecture governance.",
+    "achievements": ["Built hiring process for 50+ engineers", "Improved delivery predictability"],
+    "contactEmail": "jacob.lee@example.com",
+    "tags": ["management"]
+  }
+]
