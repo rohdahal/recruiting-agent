@@ -4,8 +4,8 @@ Local-first AI workflow for candidate search, ranking, and outreach generation f
 
 ## Product Preview
 
-![Workflow dashboard](docs/screenshots/01-workflow-dashboard.png)
-![Candidate ranking + trace](docs/screenshots/02-ranking-trace.png)
+- [View workflow dashboard screenshot](docs/screenshots/01-workflow-dashboard.png)
+- [View candidate ranking and trace screenshot](docs/screenshots/02-ranking-trace.png)
 
 ## What This Project Shows
 
