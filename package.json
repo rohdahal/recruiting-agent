@@ -1,0 +1,21 @@
+{
+  "name": "ai-recruiting-agent",
+  "version": "0.1.0",
+  "private": true,
+  "description": "AI Recruiting Workflow Experiment powered by local Ollama",
+  "workspaces": [
+    "apps/server",
+    "apps/web"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:web\"",
+    "dev:server": "npm run dev --workspace apps/server",
+    "dev:web": "npm run dev --workspace apps/web",
+    "seed:db": "npm run seed:db --workspace apps/server",
+    "build": "npm run build --workspace apps/server && npm run build --workspace apps/web",
+    "start": "npm run start --workspace apps/server"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.1"
+  }
+}
