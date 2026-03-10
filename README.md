@@ -4,8 +4,8 @@ Local-first AI workflow for candidate search, ranking, and outreach generation f
 
 ## Product Preview
 
-![Workflow dashboard](https://image2url.com/r2/default/images/1773111984064-684cad0a-d22b-46fd-960d-4932fe258353.png)
-![Candidate ranking + trace](https://image2url.com/r2/default/images/1773111945364-b034ffcb-a213-4b64-a2fd-17d257e93467.png)
+![Workflow dashboard](docs/screenshots/01-workflow-dashboard.png)
+![Candidate ranking + trace](docs/screenshots/02-ranking-trace.png)
 
 ## What This Project Shows
 
@@ -25,6 +25,24 @@ Given a hiring query, the backend runs a structured pipeline:
 4. `generate_outreach` for shortlisted candidates.
 
 The frontend then displays pipeline stats, tool trace, candidate cards, and generated outreach.
+
+## Workflow Diagram
+
+```mermaid
+flowchart LR
+    A[Hiring Query] --> B[parse_job_spec]
+    B --> C[retrieve_candidate_profiles]
+    C --> D[rank_candidates]
+    D --> E[generate_outreach]
+    E --> F[UI: shortlist, scores, tool trace]
+
+    G[.docx resumes] --> C
+    H[PostgreSQL index] --> C
+    I[Ollama] --> B
+    I --> E
+```
+
+Text flow: Query enters the API, role requirements are extracted, candidates are retrieved from indexed data, deterministic ranking is applied, and outreach drafts are generated for top matches before results are rendered in the dashboard.
 
 ## Stack
 
